@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Cálculo Ingredientes</title>
 </head>
 <body>
-    
+    <header class="cabecalho">
+        <div class="logo">
+            <img src="./img/pizza2.jpg" alt="logo pizza">
+        </div>
+        <div class="txt-logo">
+            <p>Controle de Ingredientes</p>
+        </div>
+    </header>
+    <main>
+        <section class="ent-dados">
+            <div class="div-dados">
+                <label for="espessura">Espessura da Massa:</label>
+                <input type="text" id="espessura" placeholder="0,5 cm">
+            </div>
+            <div class="div-dados">
+                <label for="raio">Raio da Pizza:</label>
+                <input type="text" id="raio" placeholder="15 cm">
+            </div>
+            <div class="btn">
+                <button>Calcular</button>
+                <button>Reiniciar</button>
+                <button>Gráfico</button>
+            </div>
+        </section>
+        <section class="saida-dados">
+            <div class="sai-dados">
+                <p>Área:</p>
+                <p class="font-color">706,5 cm2</p>
+                <p>Volume:</p>
+                <p class="font-color">353,25 cm3</p>
+                <p>Farinha:</p>
+                <p class="font-color">189 g</p>
+                <p>Água:</p>
+                <p class="font-color">106 ml</p>
+                <p>Azeite:</p>
+                <p class="font-color">4 ml</p>
+                <p>Sal:</p>
+                <p class="font-color">3,8g</p>
+                <p>Fermento:</p>
+                <p class="font-color">3,1 g</p>
+                <p>Açúcar:</p>
+                <p class="font-color">2,1 g</p>
+                <p>Ovos:</p>
+                <p class="font-color">56 g</p>
+            </div>
+            
+        </section>
+    </main>
 </body>
 </html>

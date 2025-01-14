@@ -1,3 +1,120 @@
-body{
-    color: whitesmoke;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
 }
+
+html, body {
+    max-width: 390px;
+    overflow-x: hidden; 
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.cabecalho{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+    border: solid 1px black;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.txt-logo{
+    font-size: 2rem;
+    font-family: 'Roboto','sans-serif';
+    font-weight: bold;
+    color: #14A001;
+    text-align: center;
+    max-width: 224px;
+}
+
+.ent-dados{   
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.div-dados{
+    max-width: 352px;
+    min-height: 48px;
+    margin-top: 24px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    font-family: 'Roboto','sans-serif';
+}
+
+.div-dados label{
+    padding-left: 24px;
+}
+
+.div-dados input{
+    border: none;
+    background-color: whitesmoke;
+    width: 96px;
+    min-height: 48px;
+    border-radius: 8px;
+    color: #14a001;
+    font-family: 'Roboto','sans-serif';
+    font-size: 1.2rem;
+    padding-left: 4px;
+}
+
+.div-dados input::placeholder{
+    color: #14a001;
+    font-family: 'Roboto','sans-serif';
+    font-size: 1.2rem;
+}
+
+.btn{
+    display: flex;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.btn button{
+    width: 96px;
+    height: 48px;
+    background-color: #14a001;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto','sans-serif';
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.saida-dados{
+    margin-top: 48px;
+    margin-left: 24px;
+}
+
+.sai-dados{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 352px;
+    padding-left: 48px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    font-family: 'Roboto','sans-serif';
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.sai-dados .font-color{
+    color: #14a001;
+}
+
+
+
