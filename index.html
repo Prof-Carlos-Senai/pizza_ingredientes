@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js" defer></script>
     <title>Cálculo Ingredientes</title>
 </head>
 <body>
@@ -26,7 +27,7 @@
                 <input type="text" id="raio" placeholder="15 cm">
             </div>
             <div class="btn">
-                <button>Calcular</button>
+                <button id="calcular">Calcular</button>
                 <button>Reiniciar</button>
                 <button>Gráfico</button>
             </div>
@@ -34,9 +35,9 @@
         <section class="saida-dados">
             <div class="sai-dados">
                 <p>Área:</p>
-                <p class="font-color">706,5 cm2</p>
+                <p class="font-color" id="area">706,5 cm2</p>
                 <p>Volume:</p>
-                <p class="font-color">353,25 cm3</p>
+                <p class="font-color" id="volume">353,25 cm3</p>
                 <p>Farinha:</p>
                 <p class="font-color">189 g</p>
                 <p>Água:</p>
