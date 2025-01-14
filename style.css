@@ -116,5 +116,98 @@ html, body {
     color: #14a001;
 }
 
+/* media query para desktop */
+@media (min-width: 720px){
+    html, body {
+        max-width: 100%; /* Permite expandir no desktop */
+        margin: 0 auto; /* Centraliza o conteúdo no desktop */
+        overflow-x: hidden;
+        box-sizing: border-box; 
+    }
 
+    .cabecalho {
+        display: flex;
+        justify-content: flex-start; /* Alinha o logo e texto à esquerda */
+        gap: 32px; /* Aumenta o espaço entre logo e texto */
+        padding: 16px 32px;
+    }
+
+    .logo img{
+        width: 320px;
+        height: 320px;
+        border: solid 2px black;
+        border-radius: 16px;
+        box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.5);
+    }
+    
+    .txt-logo{
+        font-size: 4.8rem;
+        font-family: 'Roboto','sans-serif';
+        font-weight: bold;
+        color: #14A001;
+        text-align: center;
+        max-width: 720px;
+    }
+
+    .ent-dados {
+        margin: 16px auto; /* Centraliza o formulário */
+        max-width: 720px; /* Maior largura para desktop */
+        padding: 32px 64px;
+    }
+
+    .div-dados {
+        display: flex; /* Coloca os labels e inputs lado a lado */
+        align-items: center;
+        justify-content: space-between;
+        min-width: 720px;
+        min-height: 64px;
+        padding: 32px;
+        border-radius: 32px;       
+    }
+
+    .div-dados label {
+        font-size: 2rem;
+       
+    }
+
+    .div-dados input {
+        width: 320px; /* Inputs um pouco maiores */
+        font-size: 2rem;
+    }
+
+    .div-dados input::placeholder{
+        color: #14a001;
+        font-family: 'Roboto','sans-serif';
+        font-size: 2rem;
+    }
+
+    .btn {
+        justify-content: center; /* Alinha os botões à esquerda */
+        gap: 32px; /* Menor espaçamento entre botões */
+        margin-top: 32px;
+        text-align: center;
+        min-width: 720px;
+    }
+
+    .btn button {
+        width: 320px; /* Botões maiores */
+        height: 64px;
+        font-size: 2rem; /* Texto maior nos botões */
+    }
+
+    .saida-dados {
+        margin: 48px auto; /* Centraliza os dados de saída */
+        max-width: 720px;
+        padding: 16px 32px;
+    }
+
+    .sai-dados {
+        padding-left: 32px; /* Reduz o padding interno */
+        max-width: 100%; /* Usa toda a largura disponível */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Distribui em 4 colunas no desktop */
+        gap: 16px; /* Espaço entre os itens */
+        font-size: 2rem;
+    }
+}
 
